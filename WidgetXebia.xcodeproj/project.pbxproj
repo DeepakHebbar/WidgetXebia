@@ -13,6 +13,12 @@
 		6A7257871A0F393300B043C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7257861A0F393300B043C9 /* Images.xcassets */; };
 		6A72578A1A0F393300B043C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A7257881A0F393300B043C9 /* LaunchScreen.xib */; };
 		6A7257961A0F393300B043C9 /* WidgetXebiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7257951A0F393300B043C9 /* WidgetXebiaTests.swift */; };
+		6A7257A61A0F395200B043C9 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7257A51A0F395200B043C9 /* NotificationCenter.framework */; };
+		6A7257AB1A0F395200B043C9 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7257AA1A0F395200B043C9 /* TodayViewController.swift */; };
+		6A7257AD1A0F395200B043C9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7257AC1A0F395200B043C9 /* MainInterface.storyboard */; };
+		6A7257B01A0F395200B043C9 /* NewdataWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6A7257A31A0F395200B043C9 /* NewdataWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6AD0E9BF1A1270DA008CAE2A /* RSSItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD0E9BE1A1270DA008CAE2A /* RSSItemTableViewCell.swift */; };
+		D8687B790CFFD2163DC65A48 /* libPods-NewdataWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E65676C08A7A23DB149F795 /* libPods-NewdataWidget.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +29,28 @@
 			remoteGlobalIDString = 6A7257791A0F393300B043C9;
 			remoteInfo = WidgetXebia;
 		};
+		6A7257AE1A0F395200B043C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A7257721A0F393300B043C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A7257A21A0F395200B043C9;
+			remoteInfo = NewdataWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A7257B41A0F395200B043C9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6A7257B01A0F395200B043C9 /* NewdataWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6A72577A1A0F393300B043C9 /* WidgetXebia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetXebia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +63,17 @@
 		6A72578F1A0F393300B043C9 /* WidgetXebiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WidgetXebiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7257941A0F393300B043C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A7257951A0F393300B043C9 /* WidgetXebiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetXebiaTests.swift; sourceTree = "<group>"; };
+		6A7257A31A0F395200B043C9 /* NewdataWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NewdataWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7257A51A0F395200B043C9 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6A7257A91A0F395200B043C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A7257AA1A0F395200B043C9 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		6A7257AC1A0F395200B043C9 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		6AD0E9BC1A126BEF008CAE2A /* WidgetXebia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WidgetXebia-Bridging-Header.h"; sourceTree = "<group>"; };
+		6AD0E9BD1A126E95008CAE2A /* NewdataWidget-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NewdataWidget-Bridging-Header.h"; sourceTree = "<group>"; };
+		6AD0E9BE1A1270DA008CAE2A /* RSSItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItemTableViewCell.swift; sourceTree = "<group>"; };
+		8E65676C08A7A23DB149F795 /* libPods-NewdataWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewdataWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE89610BC7519DF76AF05479 /* Pods-NewdataWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewdataWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewdataWidget/Pods-NewdataWidget.release.xcconfig"; sourceTree = "<group>"; };
+		D6D0416C3CD355B7FA4A043A /* Pods-NewdataWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewdataWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewdataWidget/Pods-NewdataWidget.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,15 +91,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A7257A01A0F395200B043C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7257A61A0F395200B043C9 /* NotificationCenter.framework in Frameworks */,
+				D8687B790CFFD2163DC65A48 /* libPods-NewdataWidget.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69645255687FBE172ECA65F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6D0416C3CD355B7FA4A043A /* Pods-NewdataWidget.debug.xcconfig */,
+				CE89610BC7519DF76AF05479 /* Pods-NewdataWidget.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6A7257711A0F393300B043C9 = {
 			isa = PBXGroup;
 			children = (
 				6A72577C1A0F393300B043C9 /* WidgetXebia */,
 				6A7257921A0F393300B043C9 /* WidgetXebiaTests */,
+				6A7257A71A0F395200B043C9 /* NewdataWidget */,
+				6A7257A41A0F395200B043C9 /* Frameworks */,
 				6A72577B1A0F393300B043C9 /* Products */,
+				69645255687FBE172ECA65F6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +129,7 @@
 			children = (
 				6A72577A1A0F393300B043C9 /* WidgetXebia.app */,
 				6A72578F1A0F393300B043C9 /* WidgetXebiaTests.xctest */,
+				6A7257A31A0F395200B043C9 /* NewdataWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +143,7 @@
 				6A7257861A0F393300B043C9 /* Images.xcassets */,
 				6A7257881A0F393300B043C9 /* LaunchScreen.xib */,
 				6A72577D1A0F393300B043C9 /* Supporting Files */,
+				6AD0E9BC1A126BEF008CAE2A /* WidgetXebia-Bridging-Header.h */,
 			);
 			path = WidgetXebia;
 			sourceTree = "<group>";
@@ -112,6 +173,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6A7257A41A0F395200B043C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A7257A51A0F395200B043C9 /* NotificationCenter.framework */,
+				8E65676C08A7A23DB149F795 /* libPods-NewdataWidget.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A7257A71A0F395200B043C9 /* NewdataWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6A7257AA1A0F395200B043C9 /* TodayViewController.swift */,
+				6AD0E9BE1A1270DA008CAE2A /* RSSItemTableViewCell.swift */,
+				6A7257AC1A0F395200B043C9 /* MainInterface.storyboard */,
+				6A7257A81A0F395200B043C9 /* Supporting Files */,
+				6AD0E9BD1A126E95008CAE2A /* NewdataWidget-Bridging-Header.h */,
+			);
+			path = NewdataWidget;
+			sourceTree = "<group>";
+		};
+		6A7257A81A0F395200B043C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A7257A91A0F395200B043C9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +212,12 @@
 				6A7257761A0F393300B043C9 /* Sources */,
 				6A7257771A0F393300B043C9 /* Frameworks */,
 				6A7257781A0F393300B043C9 /* Resources */,
+				6A7257B41A0F395200B043C9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6A7257AF1A0F395200B043C9 /* PBXTargetDependency */,
 			);
 			name = WidgetXebia;
 			productName = WidgetXebia;
@@ -150,6 +242,25 @@
 			productReference = 6A72578F1A0F393300B043C9 /* WidgetXebiaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6A7257A21A0F395200B043C9 /* NewdataWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A7257B11A0F395200B043C9 /* Build configuration list for PBXNativeTarget "NewdataWidget" */;
+			buildPhases = (
+				A5FEE19FE7CE5B1CDC9BD57D /* Check Pods Manifest.lock */,
+				6A72579F1A0F395200B043C9 /* Sources */,
+				6A7257A01A0F395200B043C9 /* Frameworks */,
+				6A7257A11A0F395200B043C9 /* Resources */,
+				BA45FE7A3F2D2EDFC20A4D8D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewdataWidget;
+			productName = NewdataWidget;
+			productReference = 6A7257A31A0F395200B043C9 /* NewdataWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +276,9 @@
 					6A72578E1A0F393300B043C9 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 6A7257791A0F393300B043C9;
+					};
+					6A7257A21A0F395200B043C9 = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -183,6 +297,7 @@
 			targets = (
 				6A7257791A0F393300B043C9 /* WidgetXebia */,
 				6A72578E1A0F393300B043C9 /* WidgetXebiaTests */,
+				6A7257A21A0F395200B043C9 /* NewdataWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -205,7 +320,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A7257A11A0F395200B043C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7257AD1A0F395200B043C9 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5FEE19FE7CE5B1CDC9BD57D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA45FE7A3F2D2EDFC20A4D8D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewdataWidget/Pods-NewdataWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A7257761A0F393300B043C9 /* Sources */ = {
@@ -225,6 +381,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A72579F1A0F395200B043C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7257AB1A0F395200B043C9 /* TodayViewController.swift in Sources */,
+				6AD0E9BF1A1270DA008CAE2A /* RSSItemTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +397,11 @@
 			isa = PBXTargetDependency;
 			target = 6A7257791A0F393300B043C9 /* WidgetXebia */;
 			targetProxy = 6A7257901A0F393300B043C9 /* PBXContainerItemProxy */;
+		};
+		6A7257AF1A0F395200B043C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A7257A21A0F395200B043C9 /* NewdataWidget */;
+			targetProxy = 6A7257AE1A0F395200B043C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,9 +508,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = WidgetXebia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WidgetXebia/WidgetXebia-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -348,9 +520,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = WidgetXebia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WidgetXebia/WidgetXebia-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -388,6 +562,34 @@
 			};
 			name = Release;
 		};
+		6A7257B21A0F395200B043C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D0416C3CD355B7FA4A043A /* Pods-NewdataWidget.debug.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NewdataWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NewdataWidget/NewdataWidget-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		6A7257B31A0F395200B043C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE89610BC7519DF76AF05479 /* Pods-NewdataWidget.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = NewdataWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NewdataWidget/NewdataWidget-Bridging-Header.h";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,6 +609,7 @@
 				6A72579B1A0F393300B043C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A72579C1A0F393300B043C9 /* Build configuration list for PBXNativeTarget "WidgetXebiaTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +618,16 @@
 				6A72579E1A0F393300B043C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A7257B11A0F395200B043C9 /* Build configuration list for PBXNativeTarget "NewdataWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7257B21A0F395200B043C9 /* Debug */,
+				6A7257B31A0F395200B043C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
